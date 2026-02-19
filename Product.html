@@ -1,0 +1,205 @@
+<BODY>
+<HEAD>
+<TITLE>NIGHT SHIFT SILOGAN'22</TITLE>
+<meta bame="decription" content="Midnight Bites
+All-Night Eats
+Comfort Food
+Freshly Cooked
+Late-Night Cravings
+Warm Meals
+Street Flavor
+Always Open
+Quick Serve
+Satisfy Hunger">
+<meta name="keyword>" content="Midnight bites and comfort food—always open quick service."
+</HEAD>
+
+<meta charset="UTF-8">
+<title>Product</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#0b0b0b,#1a1a1a);
+  color:#fff;
+}
+
+/* NAV */
+nav{
+  background:rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  padding:50px 20px;
+  text-align:center;
+  border-bottom:3px solid #f7c04a;
+}
+nav a{
+  color:#fff;
+  margin:35px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:26px;
+  letter-spacing:1px;
+  transition:.3s;
+}
+nav a:hover{
+  color:#f7c04a;
+  text-shadow:0 0 12px #f7c04a;
+}
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-size:48px;
+  margin:50px 0 30px;
+  letter-spacing:2px;
+  color:#f7c04a;
+}
+
+/* CONTAINER */
+.container{
+  padding:40px 20px 100px;
+  max-width:650px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:120px;
+}
+
+/* PRODUCT CARD */
+.product{
+  background:rgba(30,30,30,0.95);
+  border-radius:25px;
+  padding:25px;
+  text-align:center;
+  cursor:pointer;
+  transition:.4s;
+  box-shadow:0 15px 40px rgba(0,0,0,.7);
+}
+.product:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 25px 60px rgba(0,0,0,.9);
+}
+
+/* IMAGE */
+.product img{
+  width:100%;
+  border-radius:20px;
+  border:3px solid #f7c04a;
+}
+
+/* PRODUCT NAME */
+.product h3{
+  font-size:42px;
+  margin:20px 0 10px;
+  letter-spacing:1px;
+}
+
+/* DETAILS */
+.details{
+  display:none;
+  margin-top:25px;
+  background:linear-gradient(180deg,#1c1c1c,#262626);
+  border-radius:20px;
+  padding:35px;
+  font-size:26px;
+  line-height:1.9;
+  border:2px solid #f7c04a;
+  animation:slideDown .4s ease;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav a{font-size:18px;margin:15px;}
+  .page-title{font-size:34px;}
+  .product h3{font-size:32px;}
+  .details{font-size:20px;}
+}
+
+/* ANIMATION */
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-15px);}
+  to{opacity:1;transform:translateY(0);}
+}
+</style>
+
+<script>
+function toggleDetails(id){
+  const el=document.getElementById(id);
+  el.style.display = (el.style.display==="block") ? "none" : "block";
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="Event.html">Event</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="Product.html">Product</a>
+</nav>
+
+<h2 class="page-title">OUR PRODUCTS</h2>
+
+<div class="container">
+
+  <!-- PRODUCT 1 -->
+  <div class="product" onclick="toggleDetails('p1')">
+    <img src="8.jpeg">
+    <h3>CORNSILOG</h3>
+    <div class="details" id="p1">
+      <strong>Description:</strong> Tender corned beef paired with garlic rice and egg.<br><br>
+      <strong>Benefits:</strong> Energy-boosting, protein-rich.<br><br>
+      <strong>Advantages:</strong> Fast, flavorful, satisfying.<br><br>
+      <strong>Nutritional Value:</strong> ~520 calories.<br><br>
+      <strong>Nutrients:</strong> Protein, Iron, Vitamin B12, Carbohydrates, Healthy Fats.
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="product" onclick="toggleDetails('p2')">
+    <img src="1.jpeg">
+    <h3>TOCILOG</h3>
+    <div class="details" id="p2">
+      <strong>Description:</strong> Sweet crispy pork with garlic rice and egg.<br><br>
+      <strong>Benefits:</strong> High-energy meal.<br><br>
+      <strong>Advantages:</strong> Crunchy, sweet, filling.<br><br>
+      <strong>Nutritional Value:</strong> ~600 calories.<br><br>
+      <strong>Nutrients:</strong> Protein, Iron, Vitamin B1, Carbohydrates, Fats.
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="product" onclick="toggleDetails('p3')">
+    <img src="2.jpeg">
+    <h3>LONGSILOG</h3>
+    <div class="details" id="p3">
+      <strong>Description:</strong> Juicy longganisa served with garlic rice and egg.<br><br>
+      <strong>Benefits:</strong> Lean protein source.<br><br>
+      <strong>Advantages:</strong> Light yet filling.<br><br>
+      <strong>Nutritional Value:</strong> ~480 calories.<br><br>
+      <strong>Nutrients:</strong> Protein, Vitamin B6, Iron, Carbohydrates, Sodium.
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="product" onclick="toggleDetails('p4')">
+    <img src="7.jpeg">
+    <h3>SIOMAI</h3>
+    <div class="details" id="p4">
+      <strong>Description:</strong> Classic siomai meal loved by all ages.<br><br>
+      <strong>Benefits:</strong> Kid-friendly and satisfying.<br><br>
+      <strong>Advantages:</strong> Affordable, quick to serve.<br><br>
+      <strong>Nutritional Value:</strong> ~400 calories.<br><br>
+      <strong>Nutrients:</strong> Protein, Vitamin A, Iron, Carbohydrates, Fat.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
